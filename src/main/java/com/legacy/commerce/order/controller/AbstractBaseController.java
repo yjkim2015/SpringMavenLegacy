@@ -1,4 +1,4 @@
-package com.legacy.controller;
+package com.legacy.commerce.order.controller;
 
 import org.springframework.web.servlet.ModelAndView;
 

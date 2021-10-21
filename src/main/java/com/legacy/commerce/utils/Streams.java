@@ -1,4 +1,4 @@
-package com.legacy.controller.utils;
+package com.legacy.commerce.utils;
 
 import java.util.Collection;
 import java.util.stream.Stream;

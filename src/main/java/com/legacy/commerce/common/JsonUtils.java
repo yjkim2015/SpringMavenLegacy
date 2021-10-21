@@ -1,4 +1,4 @@
-package com.legacy.controller.common;
+package com.legacy.commerce.common;
 
 
 import com.fasterxml.jackson.core.*;
@@ -6,7 +6,7 @@ import com.fasterxml.jackson.databind.*;
 import com.fasterxml.jackson.databind.module.SimpleModule;
 import com.fasterxml.jackson.databind.ser.BeanPropertyWriter;
 import com.fasterxml.jackson.databind.ser.BeanSerializerModifier;
-import com.legacy.controller.utils.Streams;
+import com.legacy.commerce.utils.Streams;
 
 import java.io.IOException;
 import java.io.StringWriter;

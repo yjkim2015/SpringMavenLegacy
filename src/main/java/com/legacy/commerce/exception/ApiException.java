@@ -1,4 +1,4 @@
-package com.legacy.controller.exception;
+package com.legacy.commerce.exception;
 
 import org.springframework.http.HttpStatus;
 

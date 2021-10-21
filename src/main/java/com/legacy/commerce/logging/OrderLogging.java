@@ -1,4 +1,4 @@
-package com.legacy.controller.logging;
+package com.legacy.commerce.logging;
 
 
 import java.lang.annotation.ElementType;

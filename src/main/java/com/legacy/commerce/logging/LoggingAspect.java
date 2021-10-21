@@ -1,7 +1,7 @@
-package com.legacy.controller.logging;
+package com.legacy.commerce.logging;
 
-import com.legacy.controller.common.JsonUtils;
-import com.legacy.controller.exception.ApiException;
+import com.legacy.commerce.common.JsonUtils;
+import com.legacy.commerce.exception.ApiException;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -22,7 +22,7 @@ import java.util.Objects;
 public class LoggingAspect {
     private static final Logger logger = LoggerFactory.getLogger(LoggingAspect.class);
 
-    @Around("@annotation(com.legacy.controller.logging.OrderLogging)")
+    @Around("@annotation(com.legacy.commerce.logging.OrderLogging)")
     public Object loggingStartEndOfMethod(ProceedingJoinPoint joinPoint) throws Throwable {
 
         boolean startLogging = true;

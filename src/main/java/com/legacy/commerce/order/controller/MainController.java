@@ -1,8 +1,8 @@
-package com.legacy.controller;
+package com.legacy.commerce.order.controller;
 
 
-import com.legacy.controller.logging.OrderLogging;
-import com.legacy.controller.service.BuyService;
+import com.legacy.commerce.logging.OrderLogging;
+import com.legacy.commerce.order.service.BuyService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -71,7 +71,6 @@ public class MainController extends BaseUIController {
         } catch (UnsupportedEncodingException e) {
             LOGGER.error("#initMetaInfo error=> modelAndView = [{}]", modelAndView, e);
         }
-
     }
 
 }

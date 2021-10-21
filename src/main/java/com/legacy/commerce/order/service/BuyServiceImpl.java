@@ -1,4 +1,4 @@
-package com.legacy.controller.service;
+package com.legacy.commerce.order.service;
 
 import org.springframework.stereotype.Service;
 

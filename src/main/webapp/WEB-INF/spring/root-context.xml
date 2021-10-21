@@ -14,52 +14,38 @@
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.1.xsd">
 
     <!-- Root Context: defines shared resources visible to all other web components -->
-    <!--<bean id="dataSource"
+    <bean id="dataSource"
           class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-
-        <property name="driverClassName"
-                  value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"></property>
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
         <property name="url"
-                  value="jdbc:log4jdbc:mysql://trace-rds-mysql.co1upxzgpfny.ap-northeast-2.rds.amazonaws.com/bit_ex?useUnicode=yes&amp;characterEncoding=utf8&amp;useSSL=false&amp;"></property>
-        <property name="username" value="test"></property>
-        <property name="password" value="godqhr52"></property>
+                  value="jdbc:mysql://127.0.0.1:3307/book_ex?useSSL=false&amp;serverTimezone=UTC">
+        </property>
+        <property name="username" value="yoonoa"/>
+        <property name="password" value="godqhr52^^"/>
     </bean>
+
+
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <property name="dataSource" ref="dataSource"></property>
+        <property name="dataSource" ref="dataSource"/>
     </bean>
+
     <tx:annotation-driven/>
 
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <property name="configLocation"
-                  value="classpath:/mybatis-config.xml"></property>
+                  value="classpath:/mybatis-config.xml"/>
         <property name="mapperLocations"
-                  value="classpath:mappers/**/*Mapper.xml"></property>
+                  value="classpath:com/legacy/commerce/**/*Mapper.xml"/>
     </bean>
+
     <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate" destroy-method="clearCache">
         <constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory">
         </constructor-arg>
     </bean>
 
-    <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
-        <property name="host" value="smtp.gmail.com"/>
-        <property name="port" value="587"/>
-        <property name="username" value="forteas2003@skuniv.ac.kr"/>
-        <property name="password" value="godqhr52^^"/>
 
-
-        <property name="javaMailProperties">
-            <props>
-                <prop key="mail.transport.protocol">smtp</prop>
-                <prop key="mail.stmp.auth">true</prop>
-                <prop key="mail.smtp.starttls.enable">true</prop>
-                <prop key="mail.debug">true</prop>
-            </props>
-        </property>
-    </bean>-->
-   <!-- <context:component-scan base-package="com.legacy.controller">
-
-    </context:component-scan>
+   <!-- <context:component-scan base-package="com.legacy.commercerce   </context:component-scan>
     <aop:aspectj-autoproxy/>-->
 
    <!-- <context:component-scan base-package="com.bit.persistence"></context:component-scan>
