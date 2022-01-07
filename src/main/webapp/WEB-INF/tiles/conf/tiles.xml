@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "tiles-config_3_0.dtd">
+
+
+<tiles-definitions>
+
+    <!--<definition name="pCommonHead" template="/WEB-INF/__web_service/uio/common/p/commonHead.jsp">
+        <put-attribute name="customTitle" value="" />
+        <put-attribute name="seoMetaTag" value="" />
+        <put-attribute name="_bUseCustomBrowserTitle" value="false" />
+    </definition>-->
+
+    <definition name="pDefaultLayout" template="/WEB-INF/tiles/layout/p/pDefaultLayoutGate.jsp">
+        <put-attribute name="main" value="" />
+    </definition>
+
+
+   <!-- <definition name="mCommonHead" template="/WEB-INF/__web_service/uio/common/m/commonHead.jsp">
+        <put-attribute name="customTitle" value="" />
+        <put-attribute name="seoMetaTag" value="" />
+        <put-attribute name="_bUseCustomBrowserTitle" value="false" />
+    </definition>-->
+
+
+    <definition name="mDefaultLayout" template="/WEB-INF/tiles/layout/m/mDefaultLayout.jsp">
+        <put-attribute name="main" value=""/>
+    </definition>
+
+
+</tiles-definitions>

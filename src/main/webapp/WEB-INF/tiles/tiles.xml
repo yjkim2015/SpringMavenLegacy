@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "tiles-config_3_0.dtd">
+
+
+<tiles-definitions>
+
+    <definition name="/checkout/main" extends="pDefaultLayout">
+        <put-attribute name="main" value="/WEB-INF/view/pc/checkout/main.jsp" />
+        <!--<put-attribute name="_sService" value="checkout"/>
+        <put-attribute name="localHead" value="/WEB-INF/view/pc/checkout/common/localHead.jsp" />
+        <put-attribute name="localScript" value="/WEB-INF/view/pc/checkout/common/localScript.jsp" />
+        <put-attribute name="rightFloating" value="" />
+        <put-attribute name="_sServiceCommonScript" value="checkout.common" />-->
+    </definition>
+
+
+    <!-- Mobile -->
+    <definition name="/__mobile/checkout/main" extends="mDefaultLayout">
+        <put-attribute name="main" value="/WEB-INF/view/m/checkout/main.jsp" />
+        <!--<put-attribute name="_sService" value="checkout"/>
+        <put-attribute name="localHead" value="/WEB-INF/view/m/checkout/common/localHead.jsp" />
+        <put-attribute name="localScript" value="/WEB-INF/view/m/checkout/common/localScript.jsp" />
+        <put-attribute name="_sServiceTitle" value="구매하기"/>
+        <put-attribute name="_bBorderedHeader" value="true" />
+        <put-attribute name="_bFooterVisible" value="false" />
+        <put-attribute name="_bNavigationBar" value="false" />
+        <put-attribute name="_bBackButton" value="false" />
+        <put-attribute name="_bHomeButton" value="false" />
+        <put-attribute name="_bTopButton" value=".false" />
+
+        <put-attribute name="topAdvertise" value="/WEB-INF/__web_service/uio/common/m/blank.jsp" />
+        <put-attribute name="___useArtistchaiRegion" value="N" />-->
+    </definition>
+
+
+
+</tiles-definitions>
